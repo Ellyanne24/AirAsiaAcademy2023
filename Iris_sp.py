@@ -32,8 +32,5 @@ prediction_proba = modelIrisClass.predict_proba(df)
 st.subheader('Species categories and their corresponding index number')
 st.write(Y.prediction())
 
-st.subheader('Prediction')
-st.write(prediction)
-
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
