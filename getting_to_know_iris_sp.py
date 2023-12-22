@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-#import seaborn as sns
+import seaborn as sns
 import pickle
-#from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import GaussianNB
 
 st.write("# Iris Species Prediction")
 st.write("This app predicts the **Iris flower** species.")
@@ -26,15 +26,15 @@ df = user_input_features()
 st.subheader('Insert Parameters')
 st.write(df)
 
-#modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
-#prediction = modelIrisClass.predict(df)
-#prediction_proba = modelIrisClass.predict_proba(df)
+modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
+prediction = modelIrisClass.predict(df)
+prediction_proba = modelIrisClass.predict_proba(df)
 
 st.subheader('Species categories and their corresponding index number')
-#st.write(Y.unique())
+st.write(Y.unique())
 
 st.subheader('Prediction')
-#st.write(prediction)
+st.write(prediction)
 
 st.subheader('Prediction Probability')
-#st.write(prediction_proba)
+st.write(prediction_proba)
