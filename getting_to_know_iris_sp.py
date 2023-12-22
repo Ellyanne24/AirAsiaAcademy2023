@@ -27,9 +27,6 @@ st.subheader('Insert Parameters')
 st.write(df)
 
 modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
-new_pred = loaded_model.predict(X_test)
-dfnew_pred = pd.DataFrame({'Actual': y_test, 'Predicted': new_pred})
-dfnew_pred
 prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
