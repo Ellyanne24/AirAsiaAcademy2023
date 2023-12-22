@@ -26,7 +26,7 @@ df = user_input_features()
 st.subheader('Insert Parameters')
 st.write(df)
 
-loaded_model = pickle.load(open("IrisPrediction2.h5", "rb"))
+modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
 new_pred = loaded_model.predict(X_test)
 dfnew_pred = pd.DataFrame({'Actual': y_test, 'Predicted': new_pred})
 dfnew_pred
