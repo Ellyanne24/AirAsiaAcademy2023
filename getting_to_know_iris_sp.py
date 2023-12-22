@@ -31,10 +31,10 @@ st.write(df)
 #prediction_proba = modelIrisClass.predict_proba(df)
 
 st.subheader('Species categories and their corresponding index number')
-st.write(Y.unique())
+#st.write(Y.unique())
 
 st.subheader('Prediction')
-st.write(prediction)
+#st.write(prediction)
 
 st.subheader('Prediction Probability')
-st.write(prediction_proba)
+#st.write(prediction_proba)
