@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-#import seaborn as sns
+import seaborn as sns
 import pickle
 from sklearn.naive_bayes import GaussianNB
 
 st.write("# Iris Species Prediction")
-st.write("This app predicts the **Iris flower** species!")
+st.write("This app predicts the **Iris flower** species.")
 
 st.sidebar.header('Score the following characteristics')
 
