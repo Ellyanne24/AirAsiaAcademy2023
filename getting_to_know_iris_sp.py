@@ -27,7 +27,7 @@ st.subheader('Insert Parameters')
 st.write(df)
 
 #modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
-prediction = modelIrisClass.predict(df)
+#prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
 st.subheader('Species categories and their corresponding index number')
