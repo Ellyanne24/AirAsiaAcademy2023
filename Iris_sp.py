@@ -30,7 +30,7 @@ prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(modelIrisClass.unique())
+st.write(GaussianNB())
 
 st.subheader('Prediction')
 st.write(prediction)
