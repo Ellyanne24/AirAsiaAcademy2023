@@ -29,8 +29,17 @@ modelIrisClass = pickle.load(open("IrisPrediction3.h5", "rb"))
 prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
+st.subheader('Class labels and their corresponding index number')
+st.write(species.unique())
+
 st.subheader('Prediction')
 st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+
+
+
+
+
