@@ -29,8 +29,8 @@ modelIrisClass = pickle.load(open("IrisPrediction3.h5", "rb"))
 prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
-#st.subheader('Class labels and their corresponding index number')
-#st.write(GaussianNB())
+st.subheader('Class labels and their corresponding index number')
+st.write(df.species.value_counts()())
 
 st.subheader('Prediction')
 st.write(prediction)
